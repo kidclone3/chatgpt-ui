@@ -68,5 +68,20 @@ services:
     env_file:
       - .env
 
+  redis_service:
+    image: 'redis:7-alpine'
+    container_name: redis_service
+    hostname: redis
+    restart: always
+    ports:
+      - 6379:6379
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
 volumes:
   pgdata2:
