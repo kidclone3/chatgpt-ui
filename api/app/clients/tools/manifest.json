@@ -197,13 +197,8 @@
     "name": "Generate CV",
     "pluginKey": "generate_cv",
     "description": "Generate professional CV/resume documents by calling the CV generation API. Useful for creating formatted resumes and CVs with personal information, experience, education, and skills.",
-    "icon": "/assets/web-browser.svg",
+    "icon": "https://github.com/kidclone3.png",
     "authConfig": [
-      {
-        "authField": "GENERATE_CV_API_KEY",
-        "label": "Generate CV API Key",
-        "description": "Your API key for the CV generation service."
-      },
       {
         "authField": "GENERATE_CV_API_URL",
         "label": "Generate CV API URL",
