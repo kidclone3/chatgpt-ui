@@ -141,5 +141,8 @@
       "admin/",
       "packages/"
     ]
+  },
+  "dependencies": {
+    "nodemon": "3.1.10"
   }
 }
